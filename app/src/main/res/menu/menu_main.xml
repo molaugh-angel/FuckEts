@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶栏只保留一个"更多"按钮，点击后弹出 GlassMenuPopup（液态玻璃菜单），
+     具体的展开/折叠/日志/关于动作由 MainActivity 里的弹窗回调处理 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_more"
+        android:title="更多"
+        app:actionLayout="@layout/layout_toolbar_more"
+        app:showAsAction="always" />
+</menu>

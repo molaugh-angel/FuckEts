@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Part A：蓝色 -->
+    <color name="part_a_bg">#D6E8FF</color>
+    <color name="part_a_accent">#2962FF</color>
+    <color name="part_a_text">#0B3D91</color>
+
+    <!-- Part B：紫色 -->
+    <color name="part_b_bg">#E7DDFF</color>
+    <color name="part_b_accent">#7C4DFF</color>
+    <color name="part_b_text">#4A148C</color>
+
+    <!-- Part C：绿色 -->
+    <color name="part_c_bg">#D3F0DC</color>
+    <color name="part_c_accent">#00A05A</color>
+    <color name="part_c_text">#1B5E20</color>
+
+    <!-- 液态玻璃背景：底色渐变 -->
+    <color name="bg_top">#F5F8FE</color>
+    <color name="bg_bottom">#E6ECF9</color>
+
+    <!-- 液态玻璃背景：流动光斑（径向渐变，中心带 alpha，边缘全透明） -->
+    <color name="blob_a_center">#7A2962FF</color>
+    <color name="blob_a_edge">#002962FF</color>
+    <color name="blob_b_center">#6E7C4DFF</color>
+    <color name="blob_b_edge">#007C4DFF</color>
+    <color name="blob_c_center">#5A00A05A</color>
+    <color name="blob_c_edge">#0000A05A</color>
+    <color name="blob_d_center">#4A00B8D4</color>
+    <color name="blob_d_edge">#0000B8D4</color>
+</resources>

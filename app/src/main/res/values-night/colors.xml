@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 深色模式下使用低饱和深色底 + 亮色文字，保证对比度 -->
+    <color name="part_a_bg">#16324F</color>
+    <color name="part_a_accent">#6FA8FF</color>
+    <color name="part_a_text">#A8C8FF</color>
+
+    <color name="part_b_bg">#2E2350</color>
+    <color name="part_b_accent">#B39DFF</color>
+    <color name="part_b_text">#D5C6FF</color>
+
+    <color name="part_c_bg">#123524</color>
+    <color name="part_c_accent">#4ED08A</color>
+    <color name="part_c_text">#A5E5BF</color>
+
+    <!-- 深色模式：底色更暗，光斑用高亮色做"发光"效果 -->
+    <color name="bg_top">#080B14</color>
+    <color name="bg_bottom">#111827</color>
+
+    <color name="blob_a_center">#806FA8FF</color>
+    <color name="blob_a_edge">#006FA8FF</color>
+    <color name="blob_b_center">#73B39DFF</color>
+    <color name="blob_b_edge">#00B39DFF</color>
+    <color name="blob_c_center">#5E4ED08A</color>
+    <color name="blob_c_edge">#004ED08A</color>
+    <color name="blob_d_center">#6640C4FF</color>
+    <color name="blob_d_edge">#0040C4FF</color>
+</resources>

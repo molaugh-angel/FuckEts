@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  启动器图标背景：浅色斜向渐变 + 两团柔和的彩色光斑（左上蓝、右下紫），
+  呼应 App 内的液态玻璃背景；光斑用径向渐变淡出，没有硬边。
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:endColor="#D8E3FA"
+                android:startColor="#F6F9FF"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- 左上蓝色光斑 -->
+    <item
+        android:bottom="42dp"
+        android:left="-18dp"
+        android:right="42dp"
+        android:top="-18dp">
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="#002962FF"
+                android:gradientRadius="42dp"
+                android:startColor="#592962FF"
+                android:type="radial" />
+        </shape>
+    </item>
+
+    <!-- 右下紫色光斑 -->
+    <item
+        android:bottom="-18dp"
+        android:left="42dp"
+        android:right="-18dp"
+        android:top="42dp">
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="#007C4DFF"
+                android:gradientRadius="42dp"
+                android:startColor="#527C4DFF"
+                android:type="radial" />
+        </shape>
+    </item>
+
+    <!-- 中部偏右的绿色小光斑，提亮画面 -->
+    <item
+        android:bottom="58dp"
+        android:left="66dp"
+        android:right="14dp"
+        android:top="14dp">
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="#0000A05A"
+                android:gradientRadius="22dp"
+                android:startColor="#3D00A05A"
+                android:type="radial" />
+        </shape>
+    </item>
+</layer-list>

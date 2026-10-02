@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 光斑 $n：径向渐变，边缘完全透明，叠加后形成流动的色彩底 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:endColor="@color/blob_a_edge"
+        android:gradientRadius="50%p"
+        android:startColor="@color/blob_a_center"
+        android:type="radial" />
+</shape>

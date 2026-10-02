@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 关于页信息行：左侧固定宽度的标签 -->
+    <style name="AboutLabel" parent="android:Widget.TextView">
+        <item name="android:layout_width">84dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- 关于页信息行：右侧值（自动换行、可选中复制） -->
+    <style name="AboutValue" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 玻璃菜单弹窗的进出场动画 -->
+    <style name="GlassMenuPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/menu_glass_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_glass_out</item>
+    </style>
+</resources>

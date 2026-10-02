@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 玻璃菜单弹窗骨架：背景（玻璃面板 + 圆角描边）由 GlassMenuPopup 在代码里设置，
+     菜单行按数据动态 inflate popup_menu_item.xml 填入 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupContainer"
+    android:layout_width="208dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp" />

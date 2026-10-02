@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  液态玻璃的"背景世界"：四个彩色光斑，由 LiquidGlass.applyBackdrop() 缓慢漂移 + 缩放，
+  Android 12+ 再叠一层 RenderEffect 模糊。玻璃面板透出的就是这个层。
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="-80dp"
+        android:layout_marginTop="-90dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/blob_a" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="-90dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/blob_b" />
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="-60dp"
+        android:layout_marginBottom="-40dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/blob_c" />
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="-60dp"
+        android:layout_marginBottom="120dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/blob_d" />
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  启动器图标前景（自适应图标 108dp 画布，主体控制在中心 72dp 安全区内）：
+  一张带折角的"玻璃试卷" + 三条彩色内容行（蓝/紫/绿 对应 Part A/B/C），
+  与 About 页的 ic_app_logo、列表内配色同一套视觉语言。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 试卷主体：微透明白 + 蓝色描边，模拟玻璃卡片 -->
+    <path
+        android:fillAlpha="0.94"
+        android:fillColor="#FFFFFF"
+        android:pathData="M43,28 H65 L73,36 V78 A5,5 0 0 1 68,83 H43 A5,5 0 0 1 38,78 V33 A5,5 0 0 1 43,28 Z"
+        android:strokeWidth="2.2"
+        android:strokeColor="@color/part_a_accent" />
+
+    <!-- 右上角折角 -->
+    <path
+        android:fillColor="@color/part_a_bg"
+        android:pathData="M65,28 L73,36 H65 Z" />
+
+    <!-- 三条内容行：A 蓝 / B 紫 / C 绿 -->
+    <path
+        android:pathData="M46,48 H66"
+        android:strokeLineCap="round"
+        android:strokeColor="@color/part_a_accent"
+        android:strokeWidth="5" />
+    <path
+        android:pathData="M46,58 H66"
+        android:strokeLineCap="round"
+        android:strokeColor="@color/part_b_accent"
+        android:strokeWidth="5" />
+    <path
+        android:pathData="M46,68 H59"
+        android:strokeLineCap="round"
+        android:strokeColor="@color/part_c_accent"
+        android:strokeWidth="5" />
+</vector>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 关于／信息图标（24dp）：圆环 + 字母 i，用于菜单入口与关于页的标题区 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:pathData="M12,2.4 A9.6,9.6 0 1 1 12,21.6 A9.6,9.6 0 1 1 12,2.4 Z"
+        android:strokeColor="@color/part_a_accent"
+        android:strokeWidth="1.8" />
+
+    <path
+        android:fillColor="@color/part_a_accent"
+        android:pathData="M11,7 H13 V9.2 H11 Z" />
+
+    <path
+        android:fillColor="@color/part_a_accent"
+        android:pathData="M11,10.8 H13 V17 H11 Z" />
+</vector>

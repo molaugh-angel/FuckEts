@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.fuckets.etsviewer'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.fuckets.etsviewer"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions { jvmTarget = '17' }
+    buildFeatures {
+        viewBinding true
+        // Shizuku UserService 需要 AIDL（AGP 8 起默认关闭，这里显式开启）
+        aidl true
+    }
+}
+
+dependencies {
+    // Shizuku API：13.1.x 起 Shizuku.newProcess() 被改为私有，
+    // 这里固定在 13.0.0（该版本 newProcess 仍为 public），否则无法以 shell 身份执行命令。
+    implementation 'dev.rikka.shizuku:api:13.0.0'
+    // Shizuku provider 声明所需的依赖（版本需与 api 一致）
+    implementation 'dev.rikka.shizuku:provider:13.0.0'
+
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    // 下拉刷新（activity_main.xml 与 MainActivity 用到 SwipeRefreshLayout）
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    // 布局中的 CoordinatorLayout
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.4'
+    implementation 'org.json:json:20240303'
+}
